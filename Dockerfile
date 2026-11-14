@@ -29,7 +29,6 @@ COPY --from=builder /app/packages/proxy/dist ./packages/proxy/dist
 COPY --from=builder /app/packages/proxy/public ./packages/proxy/public
 
 RUN mkdir -p /data
-VOLUME ["/data"]
 EXPOSE 4020
 
 CMD ["node", "packages/proxy/dist/index.js"]
