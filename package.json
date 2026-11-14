@@ -1,0 +1,20 @@
+{
+  "name": "sipx-near402",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Sipx (near402) — Minimal HTTP 402 pay-per-token private AI inference proxy for NEAR agents",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=@near402/protocol && npm run build --workspace=near402-proxy --workspace=near402",
+    "test": "npm run build && npm run test --workspaces --if-present",
+    "proxy": "npm run start --workspace=near402-proxy",
+    "typecheck": "npm run build && npm run typecheck --workspace=near402-proxy --workspace=near402"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsup": "^9.0.0",
+    "typescript": "^5.8.2"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "near402",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Zero-config HTTP 402 buyer SDK & CLI for NEAR agents (near402 / Sipx)",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "near402": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./pi": {
+      "types": "./dist/pi.d.ts",
+      "default": "./dist/pi.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test ./src/*.test.ts"
+  },
+  "dependencies": {
+    "@noble/curves": "^2.0.1",
+    "@noble/hashes": "^2.0.1",
+    "near-api-js": "^7.5.3"
+  },
+  "devDependencies": {
+    "@near402/protocol": "0.1.0"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "near402-proxy",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Aperture-style HTTP 402 pay-per-token reverse proxy for NEAR AI Cloud",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "near402-proxy": "./dist/index.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/server.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "start": "node ./dist/index.js",
+    "test": "node --test ./dist/**/*.test.js"
+  },
+  "dependencies": {
+    "@near402/protocol": "0.1.0"
+  }
+}
+

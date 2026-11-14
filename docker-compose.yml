@@ -1,0 +1,18 @@
+services:
+  near402-proxy:
+    build: .
+    image: ghcr.io/near402/near402-proxy:latest
+    ports:
+      - "${PORT:-4020}:4020"
+    env_file:
+      - .env
+    environment:
+      PORT: "4020"
+      HOST: "0.0.0.0"
+      LEDGER_PATH: "/data/ledger.json"
+    volumes:
+      - near402-data:/data
+    restart: unless-stopped
+
+volumes:
+  near402-data:
