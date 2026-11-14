@@ -7,10 +7,10 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "npm run build --workspace=@near402/protocol && npm run build --workspace=near402-proxy --workspace=near402",
+    "build": "npm run build --workspace=@near402/protocol && npm run build --workspace=near402-proxy --workspace=sipx402",
     "test": "npm run build && npm run test --workspaces --if-present",
     "proxy": "npm run start --workspace=near402-proxy",
-    "typecheck": "npm run build && npm run typecheck --workspace=near402-proxy --workspace=near402"
+    "typecheck": "npm run build && npm run typecheck --workspace=near402-proxy --workspace=sipx402"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",

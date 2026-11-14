@@ -1,5 +1,5 @@
 {
-  "name": "near402",
+  "name": "sipx402",
   "version": "0.1.0",
   "type": "module",
   "description": "Zero-config HTTP 402 buyer SDK & CLI for NEAR agents (near402 / Sipx)",

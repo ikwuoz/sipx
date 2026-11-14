@@ -31,7 +31,7 @@ const privateKey = envPrivateKey || storedWallet?.privateKey;
 
 if (!accountId || !privateKey) {
   console.error(
-    "Set NEAR_ACCOUNT_ID and NEAR_PRIVATE_KEY (or run `npx near402 init --encrypt`)",
+    "Set NEAR_ACCOUNT_ID and NEAR_PRIVATE_KEY (or run `npx -p sipx402 near402 fund`)",
   );
   process.exit(1);
 }
