@@ -1,7 +1,7 @@
 services:
   near402-proxy:
     build: .
-    image: ghcr.io/near402/near402-proxy:latest
+    image: ghcr.io/ikwuoz/near402-proxy:latest
     ports:
       - "${PORT:-4020}:4020"
     env_file:
