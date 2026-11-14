@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Sipx splash icon">
+  <defs>
+    <linearGradient id="sipx-drop-top" x1="16" y1="4" x2="48" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#A8F5FF" />
+      <stop offset="100%" stop-color="#4DC4E0" />
+    </linearGradient>
+    <linearGradient id="sipx-drop-main" x1="8" y1="18" x2="58" y2="43" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7EE8FA" />
+      <stop offset="52%" stop-color="#4DC4E0" />
+      <stop offset="100%" stop-color="#00EC97" />
+    </linearGradient>
+    <linearGradient id="sipx-drop-bot" x1="16" y1="39" x2="50" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4DC4E0" />
+      <stop offset="100%" stop-color="#00E08E" />
+    </linearGradient>
+  </defs>
+
+  <!-- Hard Backintosh 1999 pixel offset shadows -->
+  <path
+    d="M 16 17 C 26 5, 42 3, 47 10 C 51 15, 45 21.5, 34 20.5 C 25 19.5, 20 18, 16 17 Z"
+    transform="translate(2.5 2.5)"
+    fill="#6F71B3"
+  />
+  <path
+    d="M 7 32 C 23 22.5, 47 21, 56 29.5 C 62 35, 56 44, 42 43 C 28 42, 17 37, 7 32 Z"
+    transform="translate(2.5 2.5)"
+    fill="#000022"
+  />
+  <path
+    d="M 15 43.5 C 27 44.5, 44 47.5, 49 54 C 53 58.5, 45 62.5, 35 59.5 C 24 55.5, 19 49, 15 43.5 Z"
+    transform="translate(2.5 2.5)"
+    fill="#6F71B3"
+  />
+
+  <!-- Top droplet -->
+  <path
+    d="M 16 17 C 26 5, 42 3, 47 10 C 51 15, 45 21.5, 34 20.5 C 25 19.5, 20 18, 16 17 Z"
+    fill="url(#sipx-drop-top)"
+    stroke="#000000"
+    stroke-width="2.8"
+    stroke-linejoin="round"
+  />
+  <rect x="34" y="9" width="6" height="3" fill="#FFFFFF" />
+  <rect x="31" y="12" width="3" height="3" fill="#FFFFFF" />
+
+  <!-- Hero center droplet -->
+  <path
+    d="M 7 32 C 23 22.5, 47 21, 56 29.5 C 62 35, 56 44, 42 43 C 28 42, 17 37, 7 32 Z"
+    fill="url(#sipx-drop-main)"
+    stroke="#000000"
+    stroke-width="3"
+    stroke-linejoin="round"
+  />
+  <rect x="34" y="27" width="12" height="3.5" fill="#FFFFFF" />
+  <rect x="44" y="30.5" width="5" height="3.5" fill="#FFFFFF" />
+  <rect x="26" y="29" width="5" height="3" fill="#E6FFFF" />
+
+  <!-- Bottom droplet -->
+  <path
+    d="M 15 43.5 C 27 44.5, 44 47.5, 49 54 C 53 58.5, 45 62.5, 35 59.5 C 24 55.5, 19 49, 15 43.5 Z"
+    fill="url(#sipx-drop-bot)"
+    stroke="#000000"
+    stroke-width="2.8"
+    stroke-linejoin="round"
+  />
+  <rect x="33" y="50.5" width="7" height="3" fill="#FFFFFF" />
+  <rect x="38" y="53.5" width="4" height="2.5" fill="#FFFFFF" />
+
+  <!-- Crisp 402 gold 4-point star sparkle near splash origin -->
+  <path
+    d="M 7.5 6.5 L 9.2 11.3 L 13.5 13 L 9.2 14.7 L 7.5 19.5 L 5.8 14.7 L 1.5 13 L 5.8 11.3 Z"
+    fill="#FFD000"
+    stroke="#000000"
+    stroke-width="1.8"
+    stroke-linejoin="round"
+  />
+</svg>

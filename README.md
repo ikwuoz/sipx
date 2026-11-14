@@ -1,4 +1,4 @@
-# Sipx (`sipx402` / `near402`)
+# Sipx <img src="docs/sipx-icon.svg" width="32" height="32" align="absmiddle" alt="Sipx splash icon" />
 
 **Minimal HTTP 402 pay-per-token private AI inference proxy for NEAR agents.**
 
