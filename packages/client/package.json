@@ -1,12 +1,28 @@
 {
   "name": "sipx402",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "type": "module",
   "description": "Zero-config HTTP 402 buyer SDK & CLI for NEAR agents (near402 / Sipx)",
+  "license": "MIT",
+  "homepage": "https://github.com/ikwuoz/sipx#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikwuoz/sipx.git",
+    "directory": "packages/client"
+  },
+  "keywords": [
+    "near",
+    "http-402",
+    "x402",
+    "ai-inference",
+    "tee",
+    "near-intents",
+    "agents"
+  ],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "near402": "./dist/cli.js"
+    "sipx402": "dist/cli.js"
   },
   "files": [
     "dist",

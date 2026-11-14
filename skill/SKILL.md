@@ -15,12 +15,12 @@ Call any Sipx (`near402`) OpenAI-compatible endpoint (`POST /v1/chat/completions
 
 ```bash
 npm install -g sipx402
-near402 use https://sipx-production.up.railway.app
-near402 fund                     # auto-inits wallet, claims free trial if available, checks NEAR gas
-near402 serve --port 4021        # universal local OpenAI bridge (OPENAI_BASE_URL=http://127.0.0.1:4021/v1)
+sipx402 use https://sipx-production.up.railway.app
+sipx402 fund                     # auto-inits wallet, claims free trial if available, checks NEAR gas
+sipx402 serve --port 4021        # universal local OpenAI bridge (OPENAI_BASE_URL=http://127.0.0.1:4021/v1)
 ```
 
-*(Without global install, run `npx -p sipx402 near402 ...`, or run `near402 chat "..."` directly — it auto-inits `~/.near402/wallet.json` and auto-claims starter trial credit when available. When funding an unactivated implicit account with USDC, include `>= 0.02 NEAR` for gas via `/playground?fund=<accountId>`, or provision a NEAR Gas Key via `near402 key provision --mode gas_key_full`.)*
+*(Without global install, run `npx sipx402 ...`, or run `sipx402 chat "..."` directly — it auto-inits `~/.near402/wallet.json` and auto-claims starter trial credit when available. When funding an unactivated implicit account with USDC, include `>= 0.02 NEAR` for gas via `/playground?fund=<accountId>`, or provision a NEAR Gas Key via `sipx402 key provision --mode gas_key_full`.)*
 
 Or embed `createNear402Fetch` in any Node/TS SDK (`sipx402/pi` is also exported for Pi extensions):
 

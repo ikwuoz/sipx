@@ -245,14 +245,14 @@ async function cmdInit(flags: Record<string, string | boolean>) {
   console.log("");
   const proxyUrl = resolveProxyUrl(typeof flags.url === "string" ? flags.url : undefined);
   console.log("Next step: claim a free trial or fund this account once:");
-  console.log("  - Free trial / funding guide: near402 fund");
+  console.log("  - Free trial / funding guide: sipx402 fund");
   console.log(`  - Account / Address:          ${wallet.accountId}`);
   console.log(`  - Browser wallet funder:      ${proxyUrl}/playground?fund=${wallet.accountId}`);
   if (wallet.network === "testnet") {
     console.log("  - Testnet faucet:             https://near-faucet.io/");
   }
   console.log("Then run:");
-  console.log('  near402 chat "Hello from an autonomous NEAR agent!"');
+  console.log('  sipx402 chat "Hello from an autonomous NEAR agent!"');
 }
 
 async function cmdUse(urlArg: string | undefined, flags: Record<string, string | boolean>) {
@@ -742,21 +742,21 @@ async function main() {
       break;
     }
     default:
-      console.log("near402 — Pay-per-token private AI inference CLI");
+      console.log("sipx402 — Pay-per-token private AI inference CLI");
       console.log("");
       console.log("Quick Onboarding:");
-      console.log("  near402 use <url>                     Save default Sipx proxy URL");
-      console.log("  near402 fund [--url URL] [--trial]    Auto-init wallet, claim free trial, or check gas/funding");
-      console.log("  near402 serve [--port 4021] [--url URL] Local OpenAI bridge for pi/Codex/Cursor/SDKs");
-      console.log('  near402 chat [--url URL] "<prompt>"   Pay & stream private TEE inference');
+      console.log("  sipx402 use <url>                     Save default Sipx proxy URL");
+      console.log("  sipx402 fund [--url URL] [--trial]    Auto-init wallet, claim free trial, or check gas/funding");
+      console.log("  sipx402 serve [--port 4021] [--url URL] Local OpenAI bridge for pi/Codex/Cursor/SDKs");
+      console.log('  sipx402 chat [--url URL] "<prompt>"   Pay & stream private TEE inference');
       console.log("");
       console.log("Wallet, Gas Keys & Guardrails:");
-      console.log("  near402 init [--network mainnet|testnet] [--encrypt] [--passphrase PW]");
-      console.log("  near402 wallet encrypt [--passphrase PW]");
-      console.log("  near402 key provision --owner ACCT --owner-key KEY [--mode gas_key_full|gas_key_function_call|function_call]");
-      console.log("  near402 key status | near402 key revoke --owner ACCT --owner-key KEY --public-key PK");
-      console.log("  near402 balance [--url URL]");
-      console.log("  near402 spend");
+      console.log("  sipx402 init [--network mainnet|testnet] [--encrypt] [--passphrase PW]");
+      console.log("  sipx402 wallet encrypt [--passphrase PW]");
+      console.log("  sipx402 key provision --owner ACCT --owner-key KEY [--mode gas_key_full|gas_key_function_call|function_call]");
+      console.log("  sipx402 key status | sipx402 key revoke --owner ACCT --owner-key KEY --public-key PK");
+      console.log("  sipx402 balance [--url URL]");
+      console.log("  sipx402 spend");
       break;
   }
 }
